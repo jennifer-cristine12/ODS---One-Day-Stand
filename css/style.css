@@ -1,4 +1,20 @@
-.bg-body-tertiary{
-    background-color: crimson;
-    color: salmon;
+.navbar {
+    display: flex;
+    background-color: salmon !important;
+    color: crimson !important;
 }
+
+.small {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
