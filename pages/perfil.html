@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"
+        defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>ODS - One day stand</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!--logo-->
+        <div class="container-fluid w-100 justify-content-space-between m-10">
+            <div class="small">
+                <img class="logo" src="../img/calendar-day-solid-full.svg" alt="logo">
+                <a href="../index.html" class="navbar-brand pt-1">
+                    One Day Stand
+                </a>
+            </div>
+            <!--Perfil-->
+            <div class="perfil">
+                <div class="small">
+                    <h3>{nome}</h3>
+                    <img class="logo" src="../img/circle-user-solid-full.svg" alt="logo">
+                </div>
+                <!--Configuraçôes-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="#dc143c"
+                        class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item d-none d-md-block d-lg-block hide">
+                            <a class="btn btn-primary w-100" type="button" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Configuraçoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sair</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!--Main-->
+        
+    <main class="wrapper  w-100 min-vh-100 d-flex align-items-center m-auto   background-banner">
+        <div class="container">
+            <div class="card rounded-2 p-1 pt-4 pb-4 p-lg-4 pb-md-0 pb-lg-0">
+                <div class="card-body">
+                    <form action="" class="pb-lg2" onsubmit="return false;">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Endereço de email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Senha</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput1"
+                                placeholder="*******">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Confirmar senha</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput1"
+                                placeholder="*******">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Data de nascimento</label>
+                            <input type="date" class="form-control" id="exampleFormControlInput1"
+                              >
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Genero</label>
+                            <select class="form-select" aria-label="Selecione seu gênero">
+                                <option selected disabled>Selecione seu gênero</option>
+                                <option value="1">Masculino</option>
+                                <option value="2">Feminino</option>
+                                <option value="3">Outro</option>
+                                <option value="4">Prefiro não informar</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+
+
+                            <a class="btn d-block btn-primary w-100" type="button" href="#">Atualizar Perfil</a>
+                        </div>
+                    </form>
+                
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

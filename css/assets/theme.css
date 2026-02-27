@@ -1,0 +1,10 @@
+@import "./navbar.css";
+@import "./buttons.css";
+:root {
+    --bg-primary-color: salmon;
+    --secondary-color: crimson;
+    --bg-white:#ffffff;
+    --primary-color-hover: #830505;
+    --background-color: #f0f0f0;
+    --container-color: #f0f0f0;
+}

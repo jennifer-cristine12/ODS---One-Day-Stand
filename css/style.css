@@ -1,16 +1,38 @@
-.navbar {
-    display: flex;
-    background-color: salmon !important;
-    color: crimson !important;
-    
+
+@import "./assets/theme.css";
+@import "./assets/navbar.css";
+body {
+    background-color: var(--background-color);
+    font-family: Nunito, Arial, sans-serif;
+    font-weight: 600;
 }
 
+.navbar {
+    display: flex;
+    background-color: var(--bg-primary-color) !important;
+    color: var(--secondary-color) !important;
+
+}
+
+img {
+
+    width: 40px;
+    height: 40px;
+
+}
+.navbar-brand {
+    text-decoration: none;
+    color: var(--secondary-color) !important;
+}
 .small {
     display: flex;
-    width: 30px;
-    height: 30px;
     align-items: center;
 
+}
+.small a {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 1.6rem;
 }
 
 .perfil {
@@ -18,23 +40,47 @@
     align-items: center;
     justify-content: flex-end;
 }
-.wrapper{
-    width:90%;
+
+.wrapper {
+    width: 40%;
     margin-top: 30px;
+    background-color: var(--container-color);
 }
-.medium{
-    width:80px;
-    height:80px;
+
+.medium {
+    width: 80px;
+    height: 80px;
 }
-.perfil-post{
-    margin:0;
+
+.perfil-post {
+    margin: 0;
     align-items: center;
     justify-content: flex-start;
-    width:min-content;
-    
+    width: min-content;
+
 
 }
-.Posting{
-    margin-top: 30px ;
-    
+ul{
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+a{
+    color: var(--secondary-color) !important;
+}
+
+.Posting {
+    margin-top: 30px;
+
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.hide{
+    display: none !important;
+}
+h3{
+    margin-top:5px;
+    margin-bottom:5px;
 }
