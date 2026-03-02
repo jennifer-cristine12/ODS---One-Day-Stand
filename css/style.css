@@ -1,6 +1,6 @@
-
 @import "./assets/theme.css";
 @import "./assets/navbar.css";
+
 body {
     background-color: var(--background-color);
     font-family: Nunito, Arial, sans-serif;
@@ -14,21 +14,28 @@ body {
 
 }
 
+.card p {
+    padding-left: 15px;
+}
+
 img {
 
     width: 40px;
     height: 40px;
 
 }
+
 .navbar-brand {
     text-decoration: none;
     color: var(--secondary-color) !important;
 }
+
 .small {
     display: flex;
     align-items: center;
 
 }
+
 .small a {
     margin-left: 10px;
     font-weight: 700;
@@ -47,10 +54,20 @@ img {
     background-color: var(--container-color);
 }
 
+@media screen and(min-width:(400px)) {
+    .wrapper {
+        width: 90% !important;
+        margin-top: 30px;
+        background-color: var(--container-color);
+
+    }
+}
+
 .medium {
     width: 80px;
     height: 80px;
 }
+
 
 .perfil-post {
     margin: 0;
@@ -60,12 +77,14 @@ img {
 
 
 }
-ul{
+
+ul {
     list-style: none;
     padding: 0;
     align-items: center;
 }
-a{
+
+a {
     color: var(--secondary-color) !important;
 }
 
@@ -77,10 +96,12 @@ a{
     border-radius: 5px;
 
 }
-.hide{
+
+.hide {
     display: none !important;
 }
-h3{
-    margin-top:5px;
-    margin-bottom:5px;
+
+h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
