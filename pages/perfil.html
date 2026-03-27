@@ -65,11 +65,13 @@
             </div>
         </div>
     </nav>
-    <!--Main-->
+    <div class="row">
+
+        <!--Main-->
         
-    <main class="wrapper  w-100 min-vh-100 d-flex align-items-center m-auto   background-banner">
-        <div class="container">
-            <div class="card rounded-2 p-1 pt-4 pb-4 p-lg-4 pb-md-0 pb-lg-0">
+        <main class="wrapper  w-100 min-vh-100 d-flex align-items-center m-auto   background-banner">
+            <div class="container">
+                <div class="card rounded-2 p-1 pt-4 pb-4 p-lg-4 pb-md-0 pb-lg-0">
                 <div class="card-body">
                     <form action="" class="pb-lg2" onsubmit="return false;">
                         <div class="mb-3">
@@ -94,7 +96,7 @@
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Data de nascimento</label>
                             <input type="date" class="form-control" id="exampleFormControlInput1"
-                              >
+                            >
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Genero</label>
@@ -107,17 +109,27 @@
                             </select>
                         </div>
                         <div class="mb-3">
-
-
+                            
+                            
                             <a class="btn d-block btn-primary w-100" type="button" href="#">Atualizar Perfil</a>
                         </div>
                     </form>
-                
+                    
                 </div>
-
+                
             </div>
         </div>
     </main>
+    <!--Perfil aside-->
+    <aside class="perfil-aside d-none d-lg-block">
+        <div class="card card-body rounded-2 p-1 ">
+            <div class="perfil  perfil-post d-flex col">
+                <img class="perfil col medium" src="../img/circle-user-solid-full.svg" alt="foto de perfil">
+                <h3 class="col">{nome}</h3>
+            </div>
+        </div>
+    </aside>    
+</div>
 
 </body>
 
