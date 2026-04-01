@@ -15,7 +15,7 @@
     href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/script.js"></script>
+
   <title>ODS - One day stand</title>
 </head>
 
@@ -44,7 +44,7 @@
         </button>
         <div class="collapse navbar-collapse d-lg-flex justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
-         
+
             <li class="nav-item d-none d-md-block d-lg-block hide">
               <a class="btn btn-primary w-100" type="button" href="#">Login</a>
             </li>
@@ -73,48 +73,41 @@
           <img class="perfil col small" src="img/circle-user-solid-full.svg" alt="foto de perfil">
           <h3 class="col">{nome}</h3>
         </div>
-<form action="" method="post" class="p-1 m-2" >
-  <textarea type="text" class="w-100 rounded-2" placeholder="Escreva o que está pensando" ></textarea>
-  <button class="btn btn-primary">Criar post</button>
-</form>
+        <form action="index.php" method="post" class="p-1 m-2">
+          <textarea type="text" name="post_content" class="w-100 rounded-2" placeholder="Escreva o que está pensando"></textarea>
+          <button class="btn btn-primary" type="submit">Criar post</button>
+        </form>
       </div>
 
       <!--Posts-->
 
-      <div class="Posting m-2 d-flex card card-body rounded-2 p-1 ">
-       
+      <?php
+      $post_content = $_POST['post_content'];
+  
+      $posts = [];
+  array_push($posts, $post_content);
+     
+     foreach ($posts as $post) {
+      echo "
+      <div class='Posting m-2 rounded-2 card card-body '>
+        <div class='perfil perfil-post d-flex col'>
 
-          <div class="perfil  perfil-post d-flex col">
-            
-            <img class="perfil col medium" src="img/circle-user-solid-full.svg" alt="foto de perfil">
-            <h3 class="col">{nome}</h3>
-            
-            
-          </div>
-          <p>ja que estou sozinho nesse dia especial decidi focar meu tempo nesse projeto pessoal, ele vai me ajudar
-            bastante a aprimorar as habilidades em html e css que aprendi através do curso em video, do mimo e os
-            conhecimentos em bootstrap pelo devninja (ainda bem que eu baixei as aulas antes do site sair do ar)</p>
-            <div class="row flex ">
-              <img src="img/dev ninja.png " class="col h-50" alt="imagem 1" class="post-img">
-            </div>
-            </div>
-
-          
-          <div class="Posting m-2 rounded-2 card card-body ">
-            <div class="perfil perfil-post d-flex col">
-
-          <img class="perfil col medium" src="img/circle-user-solid-full.svg" alt="foto de perfil">
-          <h3 class="col">{nome}</h3>
+          <img class='perfil col medium' src='img/circle-user-solid-full.svg' alt='foto de perfil'>
+          <h3 class='col'>{nome}</h3>
 
 
         </div>
-        <p>Consegui uma entrevista de emprego nesse para fazer manutenção de site em uma empresa pequena</p>
-        <div class="row">
-          <img src="" alt="imagem 1" class="post-img">
+        <p>$post</p>
+        <div class='row'>
+          <img src='' alt='imagem 1' class='post-img'>
         </div>
       </div>
+      ";;
+     }
 
-      </div>
+      ?>
+
+    </div>
   </main>
   <aside>
     <div class="recomendacao">
@@ -128,18 +121,19 @@
     </div>
   </div>
   <div class="chat">
-<div class="contacts">
+    <div class="contacts">
 
-</div>
-<div class="conversations">
-  <div class="your-baloon"></div>
-  <div class="their-ballon"></div>
-</div>
+    </div>
+    <div class="conversations">
+      <div class="your-baloon"></div>
+      <div class="their-ballon"></div>
+    </div>
   </div>
   <footer class="footer bg-body-tertiary">
 
   </footer>
-  
+
 
 </body>
 
+</html>
