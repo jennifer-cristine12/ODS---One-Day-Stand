@@ -1,0 +1,13 @@
+{
+    "perfil": [
+        {
+            "id": 1,
+            "nome": "",
+            "img-perfil": "",
+            "email":"",
+            "senha":"",
+            "dataNasc":"",
+            "genero":""
+        }
+    ]
+}

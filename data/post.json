@@ -1,0 +1,25 @@
+{
+    "posts":[
+        {
+            "id":1,
+            "nome":"pessoa 1",
+            "img-perfil":"",
+            "texto-post":"cada um",
+            "img-post":[""]
+            },
+    {
+            "id":1,
+            "nome":"pessoa 2",
+            "img-perfil":"",
+            "texto-post":"tem uma ideia diferente",
+            "img-post":[""]
+        },
+    {
+            "id":1,
+            "nome":"pessoa 3",
+            "img-perfil":"",
+            "texto-post":"do que fazer",
+            "img-post":[""]
+        }
+    ]
+}
